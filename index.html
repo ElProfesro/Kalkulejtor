@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulejtor</title>
+    <script>
+        function suma() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a + b;
+        }
+        function roznica() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a - b;
+        }
+        function iloczyn() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a * b;
+        }
+        function iloraz() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a / b;
+        }
+
+    </script>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Prosty Kalkulejtor!!🤑</h1>
+    <h2>==================================</h2>
+    <input type="text" id="a" value="0" dir="rtl">
+    <input type="text" id="b" value="0" dir="rtl">
+    <div id="wynik">Wynik twego pieknego rownania🤫🧏: </div>
+    <button onclick="suma()">+</button>
+    <button onclick="roznica()">-</button>
+    <button onclick="iloczyn()">*</button>
+    <button onclick="iloraz()">/</button>
+
+
+</body>
+
+</html>
